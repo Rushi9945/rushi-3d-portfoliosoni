@@ -1,17 +1,20 @@
-"use client";
-
 import PageContainer from "../components/layout/PageContainer";
-import { H1, P } from "../components/ui/Typography";
+import Hero from "../components/home/Hero";
+import Intro from "../components/home/Intro";
+import Achievement from "../components/home/Achievement";
+import Stats from "../components/home/Stats";
+import WorkPreview from "../components/home/WorkPreview";
+import SynchronicityTeaser from "../components/home/SynchronicityTeaser";
 
 export default function Home() {
   return (
-    <PageContainer className="flex flex-col justify-center min-h-[60vh]">
-      <div className="max-w-2xl space-y-6">
-        <H1>Engineer Minded.<br/>Sales Driven.<br/>Human First.</H1>
-        <P className="text-xl">
-          [CONTENT TO BE PROVIDED]
-        </P>
-      </div>
+    <PageContainer className="pt-8 md:pt-16 pb-0">
+      <Hero />
+      <Intro />
+      <Stats />
+      <Achievement />
+      <WorkPreview />
+      <SynchronicityTeaser />
     </PageContainer>
   );
 }
