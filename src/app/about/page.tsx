@@ -1,16 +1,14 @@
-"use client";
-
-import PageContainer from "../../components/layout/PageContainer";
-import SectionHeading from "../../components/ui/SectionHeading";
-import { P } from "../../components/ui/Typography";
+import PageContainer from "../components/layout/PageContainer";
+import AboutHero from "../components/about/AboutHero";
+import EngineeringBackground from "../components/about/EngineeringBackground";
+import PersonalTimeline from "../components/about/PersonalTimeline";
 
 export default function About() {
   return (
     <PageContainer>
-      <SectionHeading title="About" subtitle="The Journey So Far" />
-      <div className="max-w-2xl space-y-6">
-        <P>[CONTENT TO BE PROVIDED]</P>
-      </div>
+      <AboutHero />
+      <EngineeringBackground />
+      <PersonalTimeline />
     </PageContainer>
   );
 }

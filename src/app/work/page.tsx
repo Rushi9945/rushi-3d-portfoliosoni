@@ -1,16 +1,14 @@
-"use client";
-
-import PageContainer from "../../components/layout/PageContainer";
-import SectionHeading from "../../components/ui/SectionHeading";
-import { P } from "../../components/ui/Typography";
+import PageContainer from "../components/layout/PageContainer";
+import CareerTimeline from "../components/work/CareerTimeline";
+import SkillsMatrix from "../components/work/SkillsMatrix";
+import SectorsScaled from "../components/work/SectorsScaled";
 
 export default function Work() {
   return (
     <PageContainer>
-      <SectionHeading title="Work" subtitle="Selected Projects & Experience" />
-      <div className="max-w-2xl space-y-6">
-        <P>[CONTENT TO BE PROVIDED]</P>
-      </div>
+      <CareerTimeline />
+      <SkillsMatrix />
+      <SectorsScaled />
     </PageContainer>
   );
 }
